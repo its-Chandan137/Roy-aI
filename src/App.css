@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Blade';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Blade'), url('Fonts/Blade.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nature1';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Nature'), url('Fonts/NatureX.woff') format('woff');
+}
+
+
+*{
+  margin: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  background-color: black;
+  color: white;
+  min-height: 100lvh;
+  /* background-color: pink; */
+  background: url('Images/Resting Lion.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .nav-bar{
+  position: relative;
+} */
+
+.navigator{
+  display: flex;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 10px;
+  height: 50px;
+  align-items: center;
+}
+
+.navigator h2{
+  color: #F2E8CF;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.4s ease;
+}
+
+.navigator ul li:hover{
+  color: #A7C957;
+}
+
+.navigator h2:hover{
+  color: #A7C957;
+}
+
+
+.navigator ul{
+  /* background-color: pink; */
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.navigator ul li{
+  list-style: none;
+  color: #F2E8CF;
+  font-weight: 600;
+  font-size: small;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.4s ease;
+}
+/* ////////////////////////// HERO SECTION ///////////////////////////////////////////////// */
+
+.heroSection{
+  /* background-color: pink; */
+  height: 550px;
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.heroSectionHeadings{
+  background-color: transparent;
+  height: 300px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroSectionHeadings h3{
+  font-family: Nature1;
+}
+
+.heroSectionHeadings h1{
+  color: #A7C957;
+  font-family: 'Blade';
+}
+
+/* ///////////////////////////////// Cover Form ///////////////////////////////////////////// */
+
+.coverBox{
+  height: auto;
+  width: 100%;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.formBox{
+  background-color: rgba(255, 255, 255, 0.205);
+  /* background-color: white; */
+  height: 280px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.formBox form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.formBox form .options{
+  background-color: rgba(246, 246, 246, 0);
+  backdrop-filter: blur(20px);
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #F2E8CF;
+  padding: 0 10px;
+}
+
+.options a{
+  font-size: x-small;
+  text-decoration: none;
+  color: #386641;
+  font-weight: 700;
+}
+.options p{
+  font-size: x-small;
+  text-decoration: none;
+  color: #386641;
+  font-weight: 700;
+
+}
+
+.formBox h2{
+  text-align: start;
+  margin-right: 30px;
+  color: #F2E8CF;
+}
+
+.formBox form button{
+  height: 40px;
+  width: 140px;
+  border-radius: 30px;
+  border: none;
+  background-color: black;
+  color: #F2E8CF;
+  font-size: x-small;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
