@@ -1,9 +1,3 @@
-@font-face {
-  font-family: 'Blade';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Blade'), url('Fonts/Blade.woff') format('woff');
-}
 
 @font-face {
   font-family: 'Nature1';
@@ -197,3 +191,11 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
+
+/* @media screen and (width <= 700px) {
+  body{
+    background-image: url('Images/7b163026b3753a94f7e40603cbaa6083.jpeg');
+    background-position: center;
+    background-color: pink;
+  }
+} */

@@ -12,7 +12,7 @@ function HeroSection() {
         },
         {
             location: "African Forest",
-            weather: "Not idel for Travel",
+            weather: "Not idle for Travel",
             timing: "------------",
             condition: {available: false, color: "#BC4749"},
         }
@@ -27,7 +27,7 @@ function HeroSection() {
         <div className="coverBox">
             {/* <CoverForm/> */}
             {data.map((x,i) => (
-            <CoverForm data = {x}/>
+            <CoverForm data = {x} key={i}/>
             ))}
         </div>
     </div>
